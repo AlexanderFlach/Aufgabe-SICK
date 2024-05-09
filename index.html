@@ -11,9 +11,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="header"></h1>
-    <div id="description"></div>
-    <div id="image"></div>
+
+    
+
+    <div class="Objective">
+        <div class="Child">
+            <img id="image1">
+            <div>
+                <img id="image2" alt="">
+                <p id="person">Proccess Owner</p>
+                <div id="owner"></div>
+            </div>
+        </div>
+
+
+        <div id="objText" class="Child">
+            <div id="objective"></div>
+            <div id="description"></div>
+        </div>
+
+    </div>
+        
+    <br>
+
+    <div id="category"></div>
+    <div id="status123"></div>
+
     <div>
         <table style="width: 100%;">
             <tr>
@@ -21,63 +44,23 @@
                 <th>Description</th>
                 <th>progress</th>
             </tr>
-            <tbody id="tableBody">
-        
-            </tbody>
-        
+            <tbody id="tableBody"></tbody>
         </table>
     </div>
 
+    <div>
+        <div id="startDate"></div>
+        <div id="endDate"></div>
+    </div>
     
+    <div id="relations">
+        <div id="rel_Name"></div>
+        <div id="rel_Description"></div>
+        <a href="" id="rel_Link"></a>
+    </div> 
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="Stylesheet.css">
     
-    <script>
-        var descriptions = []
-        var progress = []
-        
-        //fetch json file and fill arrays with data
-        fetch("data.json")
-        .then(response => response.json())
-        .then(json => {
-            json.OKR[0].keyResults.forEach(element => {
-                descriptions.push(element.description);
-            });
-            json.OKR[0].keyResults.forEach(element => {
-                progress.push(element.progress);
-            });
-            
-            
-            var table = document.getElementById("tableBody");
-
-
-            // create new rows and fill them with keyResults
-            for(let i = 0; i < descriptions.length; i++) {
-                var row = table.insertRow(i);
-
-                var cellRowNumber = row.insertCell(0);
-                cellRowNumber.innerHTML = i+1;
-                var cellDesc = row.insertCell(1);
-                cellDesc.innerHTML = descriptions[i];
-                var cellProg = row.insertCell(2);
-                cellProg.innerHTML = progress[i];
-            }
-
-            // Page Title
-            var header = document.getElementById("header");
-            header.innerHTML = json.OKR[0].objective;
-            // Description
-            var desc = document.getElementById("description");
-            desc.innerHTML = json.OKR[0].description;
-            // Image
-            var img = document.getElementById("image");
-            img.innerHTML = json.OKR[0].image;
-            
-
-            /*console.log(json.OKR[0]);
-            console.log(descriptions);*/
-        })
-
-        
-        
-    </script>
 </body>
 </html>

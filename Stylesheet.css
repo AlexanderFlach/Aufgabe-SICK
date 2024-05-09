@@ -1,0 +1,31 @@
+.Objective {
+    border: 1px red solid;
+    text-align: left;
+}
+div {
+    border: 1px green solid;
+}
+img {
+    vertical-align: bottom;
+}
+
+.Child {
+    display: inline-block;
+}
+
+#image1 {
+    width: 200px;
+    vertical-align: top;
+}
+#image2 {
+    width: 200px;
+}
+
+#objText {
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+#person {
+    
+}
