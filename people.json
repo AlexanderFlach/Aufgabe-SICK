@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Stefan",
+        "alter": 21,
+        "adresse": {
+            "strasse": "Straße1",
+            "plz": 187
+        }
+    },
+    {
+        "name": "Achim",
+        "alter": 15,
+        "adresse": {
+            "strasse": "Straße2",
+            "plz": 361
+        }
+    },
+    {
+        "name": "Robert",
+        "alter": 45,
+        "adresse": {
+            "strasse": "Straße3",
+            "plz": 420
+        }
+    }
+]
