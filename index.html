@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    table, th, td {
-        border: 1px black solid;
-    }
-</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +17,9 @@
                 <div id="objective"></div>
                 <div id="description"></div>
             </div>
+
+            <div style="flex: 1;"></div>
+            
             <div id="ownerDiv" class="Child">
                 <img id="image2" alt="">
                 <p id="person">Proccess Owner</p>
@@ -28,17 +27,14 @@
             </div>
         </div>
     </div>
-    
-
 
     <div id="mainContent">
         <div class="Child">
             <div id="category" class="tableHeader"></div>
             <div id="status123" class="tableHeader"></div>
         </div>
-        
         <div id="tableDiv">
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="tableStyle">
                 <tr>
                     <th>Key Result</th>
                     <th>Description</th>
@@ -47,17 +43,12 @@
                 <tbody id="tableBody"></tbody>
             </table>
         </div>
-
         <div id="date">
             <div id="startDate"></div>
             <div id="endDate"></div>
         </div>
-
     </div>
 
-
-
-    
     <div id="relations">
         <div id="rel_Name"></div>
         <div id="rel_Description"></div>

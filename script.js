@@ -1,8 +1,11 @@
 var descriptions = []
 var progress = []
 var table = document.getElementById("tableBody");
+
 var OKR_Image = document.querySelector("#image1");
 var owner_Image = document.querySelector("#image2");
+
+
 
 //fetch json file and fill arrays with data
 fetch("data.json")
@@ -25,8 +28,9 @@ fetch("data.json")
             var cellDesc = row.insertCell(1);
             cellDesc.innerHTML = descriptions[i];
             var cellProg = row.insertCell(2);
-            cellProg.innerHTML = progress[i];
+            cellProg.innerHTML = "<td style=\"background-color:" + "red" + "\">" + progress[i] + "</td>";
         }
+        checkProgress(progress);
 
         // Objective
         objective.innerHTML = json.OKR[0].objective;
@@ -44,7 +48,16 @@ fetch("data.json")
         rel_Name.innerHTML = json.OKR[0].relations[0].name;
         rel_Description.innerHTML = json.OKR[0].relations[0].description;
         rel_Link.innerHTML = json.OKR[0].relations[0].link;
+        // check progress
 
-
-       
     })
+    function checkProgress(array) {
+        console.log("inTest");
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > 0.5) {
+                console.log("success")
+            }
+            else {console.log("no success")}
+        }
+    }
+    

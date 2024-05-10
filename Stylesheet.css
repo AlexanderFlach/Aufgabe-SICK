@@ -1,82 +1,102 @@
-div {
-
-}
-img {
-    
-}
-
 .Child {
     display: flex;
 }
-
-.Objective {
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    .Objective {
     
-    #objDiv {
-        #image1 {
-            width: 300px;
-            margin: 20px;
-            align-self: start;
-        }
-
-        #objText {
-            padding: 10px;
-            margin: 20px;
-            vertical-align: top;
-            flex: 1;
-            flex-direction: column;
-
-            #objHeader {
-                font-size: 30px;
-                margin-top: 0px;
+        #objDiv {
+            #image1 {
+                width: 300px;
+                margin: 20px;
+                align-self: start;
             }
-            #objective {
-                font-size: 40px;
+            #objText {
+                padding: 10px;
+                margin: 20px;
+                vertical-align: top;
+                flex-direction: column;
+    
+                #objHeader {
+                    font-size: 40px;
+                    margin-top: 0px;
+                }
+                #objective {
+                    font-size: 40px;
+                    padding-bottom: 10px;
+                    font-weight: bold;
+                }
+                #description {
+                    font-size: 30px;
+                }
             }
-        }
-        #ownerDiv {
-            margin: 20px;
-            flex-direction: column;
-            text-align: center;
-
-            #image2 {
-                width: 180px;
-            }
-            #person {
-                text-decoration: underline;
-                margin-bottom: 2px;
-                margin-top: 5px;
+            #ownerDiv {
+                margin: 20px;
+                flex-direction: column;
+                text-align: center;
+    
+                #image2 {
+                    width: 180px;
+                }
+                #person {
+                    text-decoration: underline;
+                    margin-bottom: 2px;
+                    margin-top: 5px;
+                }
             }
         }
     }
-}
-.tableHeader {
-    margin: 20px;
-    margin-right: 50px;
-    margin-bottom: 0;
-    font-size: 20px;
-}
-#tableDiv {
-    margin: 20px;
-}
-#date {
-    margin: 20px;
-    padding-bottom: 20px;
-}
-body {
-    position: relative;
-}
-#relations {
-    position: fixed;
-    bottom: 0;
-
-    margin: 10px;
-}
-#mainContent {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin: 20px;
-}
+    #mainContent {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 20px;
 
 
+        .tableStyle {
+            border-collapse: collapse;
+            
+            th, td {
+                padding: 5px;
+              }
+            th {
+                background-color: rgb(28, 128, 146);
+                border: 1px solid rgb(28, 128, 146);
+            }
+            td {
+                border-left: 1px solid rgb(28, 128, 146);
+                border-right: 1px solid rgb(28, 128, 146);
+            }
+            tbody {
+                border-bottom: 1px solid rgb(28, 128, 146);
+            }
+            tr:nth-child(even) {background-color: #f2f2f2;}
+        }
+        .tableHeader {
+            margin: 20px;
+            margin-right: 50px;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        #tableDiv {
+            margin: 20px;
+        }
+        #date {
+            margin: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    #relations {
+        position: fixed;
+        bottom: 0;
+        margin: 10px;
+    }
+
+
+
+    
+
+
+}
 
 
 
