@@ -1,31 +1,92 @@
-.Objective {
-    border: 1px red solid;
-    text-align: left;
-}
 div {
-    border: 1px green solid;
+
 }
 img {
-    vertical-align: bottom;
+    
 }
 
 .Child {
-    display: inline-block;
+    display: flex;
 }
 
-#image1 {
-    width: 200px;
-    vertical-align: top;
-}
-#image2 {
-    width: 200px;
-}
-
-#objText {
-    vertical-align: top;
-    margin-top: 100px;
-}
-
-#person {
+.Objective {
     
+    #objDiv {
+        #image1 {
+            width: 300px;
+            margin: 20px;
+            align-self: start;
+        }
+
+        #objText {
+            padding: 10px;
+            margin: 20px;
+            vertical-align: top;
+            flex: 1;
+            flex-direction: column;
+
+            #objHeader {
+                font-size: 30px;
+                margin-top: 0px;
+            }
+            #objective {
+                font-size: 40px;
+            }
+        }
+        #ownerDiv {
+            margin: 20px;
+            flex-direction: column;
+            text-align: center;
+
+            #image2 {
+                width: 180px;
+            }
+            #person {
+                text-decoration: underline;
+                margin-bottom: 2px;
+                margin-top: 5px;
+            }
+        }
+    }
 }
+.tableHeader {
+    margin: 20px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+#tableDiv {
+    margin: 20px;
+}
+#date {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+body {
+    position: relative;
+}
+#relations {
+    position: fixed;
+    bottom: 0;
+
+    margin: 10px;
+}
+#mainContent {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

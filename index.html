@@ -12,46 +12,51 @@
 </head>
 <body>
 
-    
-
     <div class="Objective">
-        <div class="Child">
+
+        <div id="objDiv" class="Child">
             <img id="image1">
-            <div>
+            <div id="objText" class="Child">
+                <p id="objHeader">Objective:</p>
+                <div id="objective"></div>
+                <div id="description"></div>
+            </div>
+            <div id="ownerDiv" class="Child">
                 <img id="image2" alt="">
                 <p id="person">Proccess Owner</p>
                 <div id="owner"></div>
             </div>
         </div>
+    </div>
+    
 
 
-        <div id="objText" class="Child">
-            <div id="objective"></div>
-            <div id="description"></div>
+    <div id="mainContent">
+        <div class="Child">
+            <div id="category" class="tableHeader"></div>
+            <div id="status123" class="tableHeader"></div>
+        </div>
+        
+        <div id="tableDiv">
+            <table style="width: 100%;">
+                <tr>
+                    <th>Key Result</th>
+                    <th>Description</th>
+                    <th>progress</th>
+                </tr>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <div id="date">
+            <div id="startDate"></div>
+            <div id="endDate"></div>
         </div>
 
     </div>
-        
-    <br>
 
-    <div id="category"></div>
-    <div id="status123"></div>
 
-    <div>
-        <table style="width: 100%;">
-            <tr>
-                <th>Key Result</th>
-                <th>Description</th>
-                <th>progress</th>
-            </tr>
-            <tbody id="tableBody"></tbody>
-        </table>
-    </div>
 
-    <div>
-        <div id="startDate"></div>
-        <div id="endDate"></div>
-    </div>
     
     <div id="relations">
         <div id="rel_Name"></div>
@@ -63,4 +68,7 @@
     <link rel="stylesheet" href="Stylesheet.css">
     
 </body>
+
+
+
 </html>
