@@ -28,6 +28,7 @@ fetch("data.json")
             var cellDesc = row.insertCell(1);
             cellDesc.innerHTML = descriptions[i];
             var cellProg = row.insertCell(2);
+            cellProg.innerHTML = progress[i];
         }
 
         // Objective
