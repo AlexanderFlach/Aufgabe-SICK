@@ -42,8 +42,9 @@ fetch("data.json")
         category.innerHTML = "Category: " + json.OKR[0].category;
         startDate.innerHTML = "Start Date: " + json.OKR[0]["start-date"];
         endDate.innerHTML = "End Date: " + json.OKR[0]["end-date"];
-        status123.innerHTML = "Status: " + json.OKR[0].status; // status not working!
+        status123.innerHTML = "Status: " + json.OKR[0].status;
         owner.innerHTML = json.OKR[0].owner[0].name;
+        // Footer
         rel_Name.innerHTML = json.OKR[0].relations[0].name;
         rel_Description.innerHTML = json.OKR[0].relations[0].description;
         rel_Link.innerHTML = json.OKR[0].relations[0].link;
